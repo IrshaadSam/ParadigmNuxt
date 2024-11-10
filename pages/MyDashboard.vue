@@ -188,7 +188,7 @@ export default {
   methods: {
     async getTrades() {
       try {
-        const response = await this.$axios.$get('/api/trades');
+        const response = await this.$axios.$get('/trades');
         console.log('API Response:', response);
         this.trades = response.items || []; // Safely handle the response
       } catch (error) {
