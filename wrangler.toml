@@ -1,0 +1,14 @@
+name = "paradigm_dashboard"
+account_id = "105cfbfb739326a86fb97be4cf255d84D"
+workers_dev = true
+compatibility_date = "2024-11-09"
+
+[build]
+command = "npm run generate"
+upload = { format = "service-worker", dir = "./dist" }
+
+main = "./worker.js"  # Path to your worker file
+
+# If you're using environment variables, make sure the vars section is correct
+[vars]
+API_URL = "https://paradigmapi.pythonanywhere.com"
