@@ -40,7 +40,7 @@ export default {
   proxy: {
     '/api/': {
       target: process.env.API_URL || 'https://paradigmapi.pythonanywhere.com',  // Dynamically use the production URL
-      pathRewrite: { '^/api/': '' },
+      //pathRewrite: { '^/api/': '' },
       changeOrigin: true,
       secure: false,
     },
